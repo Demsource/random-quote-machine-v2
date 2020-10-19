@@ -17,7 +17,11 @@ const QuoteMachine = (props) => (
         </CardContent>
         <CardActions>
             <Button id='new-quote' size='small' onClick={props.assignNewQuoteIndex}>Next Quote</Button>
-            <IconButton id='tweet-quote' target='_blank' href={`https://twitter.com/intent/tweet?text=${props.selectedQuote.quote} - ${props.selectedQuote.author}`}>
+            <IconButton
+                id='tweet-quote'
+                target='_blank'
+                href={encodeURI(`https://twitter.com/intent/tweet?text=${props.selectedQuote.quote} - ${props.selectedQuote.author}`)}
+            >
                 <FontAwesomeIcon icon={faTwitter} size='md' />
             </IconButton>
         </CardActions>

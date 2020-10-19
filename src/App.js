@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {random} from 'lodash';
 import QuoteMachine from './components/QuoteMachine';
 import 'typeface-roboto';
-import {Grid, withStyles} from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+import {withStyles} from '@material-ui/core/styles';
 
 const styles = {
   container: {
